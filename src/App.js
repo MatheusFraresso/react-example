@@ -3,6 +3,10 @@ import "./App.css"
 import Matheus from "./Matheus"
 
 function App() {
+  const marcas = ["apple", "sansung", "xiaomi", "motorola", "lg"];
+  const listaMarcas = marcas.map ((string) =>
+    <li>{string}</li>  
+   );
   return (
     <div className="App">
       <header className="App-header">
@@ -12,6 +16,7 @@ function App() {
         <Matheus initialState={199}>
           <p>Olá eu sou o filho do matheus</p>
         </Matheus>
+        <ul>{listaMarcas}</ul>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -19,6 +24,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React COm o matheus
+function 
+
         </a>
       </header>
     </div>
